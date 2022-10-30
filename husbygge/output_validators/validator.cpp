@@ -121,7 +121,7 @@ int main(int argc, char** argv) {
 		ll bestsc = score(fans, grid, K, judge_error);
 		double ratio = (double)sc / (double)bestsc;
 		if (T == 0) accept(0);
-		else accept(10.0 * ratio * ratio);
+		else accept(min(10.0, 10.0 * ratio * ratio));
     } catch(...) {
         die("IO failure");
     }
